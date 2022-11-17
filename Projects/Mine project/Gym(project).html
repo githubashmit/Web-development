@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashmit's Fitness</title>
+</head>
+<style>
+  body {
+    color: white;
+    background: url(Gym1.jpg);
+
+  }
+
+  .left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    color: black;
+  }
+
+  .left img {
+    width: 189px;
+    height: 131px
+  }
+
+  .left div {
+    text-align: center;
+    font-family: fantasy;
+  }
+
+  .mid {
+    display: block;
+    width: 36%;
+    margin: 20px auto;
+    /* border: 2px solid white; */
+  }
+
+  .right {
+    position: absolute;
+    right: 110px;
+    top: 31px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+    font-family: 'Playball', cursive;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+
+  }
+
+  .right button {
+    font-family: 'Playball', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px, 14px;
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .right button:hover {
+    background-color: grey;
+  }
+
+  .con {
+    margin-top: 162px;
+    margin-left: 454px;
+    /* border: solid red; */
+    padding: 31px;
+    width: 34%;
+    border-radius: 23px;
+  }
+
+  .form-group input {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    /* border: 2px solid black; */
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+  }
+
+  .con h1 {
+    text-align: center;
+  }
+
+  .con button {
+    display: block;
+    width: 85%;
+    margin: 14px auto;
+    border-radius: 10px;
+    height: 38px;
+    background-color: grey;
+    cursor: pointer;
+  }
+  .con button:hover{
+    background-color: red;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="Gym.jpg" alt="">
+      <div>Ashmit's Fitness (Workout)</div>
+    </div>
+    <div class="mid">
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness</a></li>
+          <li><a href="#">Conatct us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <button class="btn">Call us now</button>
+      <button class="btn">Email us</button>
+    </div>
+    <div class="con">
+      <h1>Join the best gym of Delhi now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+          <input type="number" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+          <input type="email" name="" placeholder="Enter your Email Id">
+        </div>
+          <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+          </div>
+
+      </form>
+      <div>
+        <button class="btn">Submit</button>
+      </div>
+
+    </div>
+  </header>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Varibles & Custom Properties</title>
+    <style>
+        :root{
+            /* think as a global variable */
+            --box-color:blue;
+            --primary-color:brown;
+            --danger-color:yellow;
+            --maxw: 333px;
+        }
+        .box{
+            /* --box-color:violet;take it as a local variable */
+            background-color: var(--primary-color);
+            border:4px solid var(--danger-color);
+            box-shadow: 3px 7px var(--box-color);
+            margin:2px 9px;
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            /* --box-color:violet;take its as a local variable */
+            display: flex;
+            background-color: var(--box-color);
+            text-align: center;
+            justify-content: center;
+            max-width: var(--maxw);
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

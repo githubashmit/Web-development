@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Grid</title>
+    <style type="text/css">
+          .one{
+            grid-area:header;
+            /* border: 2px solid red; */
+          }
+          .two{
+            grid-row:left;
+            /* border: 2px solid rgb(63, 168, 25); */
+          }
+          .three{
+            grid-area:center;
+            /* border: 2px solid rgb(43, 15, 119); */
+          }
+          .four{
+            grid-area:right;
+            /* border: 2px solid rgb(178, 186, 24); */
+          }
+          .five{
+            grid-area:footer;
+            /* border: 2px solid rgb(235, 29, 204); */
+          }
+          .grid-container{
+            display:grid;
+            grid-template-areas: 'header header header header header header' 'left center center center right right' 'left footer footer footer footer footer';
+            gap:10px;
+          }
+          .grid-container > div{
+            background-color: yellow;
+            font-size: 20px;
+            padding: 20px;
+          }
+          .grid-container .one{
+            text-align: center;
+          }
+    </style>
+</head>
+<body>
+    <h1>Learning Grid</h1>
+    <p>Hello i am ashmit</p>
+    <div class="grid-container">
+        <div class="one"><ol>
+            <li>Hello</li>
+            <li>Hello</li>
+            <li>Hello</li>
+            <li>Hello</li>
+        </ol>
+            Header Inception is a 2010 science fiction action film[4][5][6] written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. </div>
+        <div class="two">Left Inception is a 2010 science fiction action film[4][5][6] written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. </div>
+        <div class="three">Center Inception is a 2010 science fiction action film[4][5][6] written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. </div>
+        <div class="four">Right Inception is a 2010 science fiction action film[4][5][6] written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. </div>
+        <div class="five">Footer Inception is a 2010 science fiction action film[4][5][6] written and directed by Christopher Nolan, who also produced the film with Emma Thomas, his wife. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. </div>
+    </div>
+</body>
+</html>

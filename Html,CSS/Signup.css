@@ -1,0 +1,25 @@
+h1{
+    color:#ff0000a8;
+}
+body{
+    background-color: grey;
+}
+.sign{
+    padding-bottom: 165px;
+    background-color: white;
+    border: 2px solid red;
+    margin-top: 43px;
+    margin-left: 444px;
+    margin-right: 24%;
+    border-radius: 19px;
+    padding-left: 106px;
+    padding-right: 117px;
+    display: inline-block;
+}
+input{
+    width:100%;
+    font-size: 26px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+    background-color: #d0c0ffbf;
+}

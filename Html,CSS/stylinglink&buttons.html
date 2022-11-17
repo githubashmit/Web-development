@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Link and Buttons</title>
+    <style>
+        .container{
+            padding:30px  ;
+            border: solid red;
+            margin: 30px auto;
+            width: 300px;
+            background-color: pink;
+            
+        }
+        a{
+          text-decoration: none;
+          color:blue;  
+        }
+        a:hover{
+            color: black;
+            background-color: purple;
+        }
+        a:visited{
+            color: brown;
+            background-color:yellow;
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        .btn{
+            background-color: blanchedalmond;
+            padding: 5px;
+            margin: 20px;
+            border: none;
+            cursor: pointer ;
+            font-size:15px;
+            border-radius: 20px;
+        }
+        #btn:hover{
+            color: red;
+          background-color: purple;
+        }
+        #btn:visited{
+            color: red;
+            background-color: black;
+        }
+        #btn:active{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h1>Styling link</h1>
+    <p>To avoid this, we use the property known as clear. If we write clear: both, then both the other elements will not overlap the stationary section.For paragraphs, we have different alignments options like right, left, center, and justify. The right alignment will move the texts to the right, left alignment to the left side and so on.</p>
+    <a href="https://www.google.co.in/" class="btn">Read more</a>
+   <a href="https://www.facebook.com/" id="btn">contact us</a>
+</div>
+
+   
+   
+    
+</body>
+</html>
