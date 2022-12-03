@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<style>
+    #btn{
+        padding : 5px 10px;
+        background-color: red;
+        border:2px solid black;
+        color:white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+    <div class="container">
+        <h1>This is heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum id recusandae, nesciunt eius voluptates accusamus quam magnam placeat consequuntur! Placeat tempore nam ipsa animi odit soluta amet aliquam ipsam voluptatibus!
+        At odit aliquam veniam dignissimos consequuntur qui dolorem ex repudiandae quaerat magni eaque animi, quia delectus cupiditate amet obcaecati fuga consectetur dolorum nobis repellat praesentium nemo. Eum ad molestiae fugit?</p>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+          <script>
+            let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside') 
+        });
+
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse now went outside')
+        });
+            function toggleHide(){
+                let btn =document.getElementById('btn');
+                let para =document.getElementById('para')
+                if (para.style.display !='none'){
+                    para.style.display='none';
+                }
+                else{
+                    para.style.display='block';
+                }
+            }
+          </script>
+    </div>
+</body>
+</html>
