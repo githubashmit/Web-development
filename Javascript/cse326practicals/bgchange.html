@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    /* Set the default background color to white */
+    background-color: white;
+  }
+
+  select {
+    /* Style the dropdown list */
+    width: 300px;
+    height: 30px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Create a dropdown list with different color names -->
+<select onchange="changeBackgroundColor(this.value)">
+  <option value="white">White</option>
+  <option value="black">Black</option>
+  <option value="red">Red</option>
+  <option value="pink">pink</option>
+  <option value="wheat">wheat</option>
+  <option value="grey">grey</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+  <option value="purple">Purple</option>
+</select>
+
+<!-- Include a script to change the background color when a color is selected from the dropdown list -->
+<script>
+  function changeBackgroundColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+</body>
+</html>

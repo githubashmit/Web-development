@@ -1,0 +1,14 @@
+body{
+  padding: 0;
+  /* margin: 0; */
+}
+.hero1{
+  border: 2px solid black;
+  width: 500px;
+  height: 250px;
+}
+.hero2{
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+}

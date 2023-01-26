@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/drpdown.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <!-- <a href="#" onmouseover="alert('This is an alert box!')">Rollover this link to see an alert box</a> -->
+  <div class="container">
+    <button class="click">Click me</button>
+    <div class="list">
+      <button class="links">link 1</button>
+      <button class="links">link 2</button>
+      <button class="links">link 3</button>
+      <button class="links">link 4</button>
+      <button class="links">link 5</button>
+
+
+
+      
+    </div>
+  </div>
+  <script>
+    let click = document.querySelector(".click");
+    let list = document.querySelector(".list");
+    click.addEventListener("click",()=>{
+        list.classList.toggle("newlist");
+    });
+    </script>
+</body>
+</html>

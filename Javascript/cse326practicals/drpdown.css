@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 200px;
+  position: relative;
+
+
+}
+.click{
+  background-color: rgb(223, 193, 39);
+}
+.click:hover{
+  background-color: rgb(112, 255, 191);
+}
+.click,.links{
+  padding: 12px;
+  font-size: 1.2em;
+  border: none;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+
+}
+.list{
+  position:absolute;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+
+}
+.newlist{
+  transform: scaleY(1);
+   
+}
+.links{
+  background-color: rgb(40, 232, 143);
+}
+.links:hover{
+  background-color:rgb(41, 115, 225) ;
+  transform:scale(1.1);
+
+}
