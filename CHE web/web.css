@@ -1,0 +1,141 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  /* background: url(bg.jpg); */
+  /* background-color: gray; */
+}
+/* targeting an HTML element by tag name */
+h1 {
+  color: red;
+}
+
+/* targeting an HTML element by class name */
+.my-class {
+  background-color: blue;
+}
+
+/* targeting an HTML element by ID */
+#my-id {
+  font-size: 24px;
+}
+
+/* targeting a child element */
+.parent-element .child-element {
+  border: 1px solid black;
+}
+
+/* targeting a hover state */
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Header styles */
+#header {
+  background-color: #6B8E23;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  font-size: 28px;
+}
+
+#topnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.dropdown1 {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown_link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dropdown2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.dropdown1:hover .dropdown2 {
+  display: block;
+}
+
+.dropdown2 a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown2 a:hover {
+  background-color: #ddd;
+}
+
+/* Content styles */
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#content_heading {
+  font-size: 28px;
+  margin: 30px 0;
+}
+
+#sidenav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidenav li {
+  margin-bottom: 10px;
+}
+
+#sidenav hr {
+  margin: 5px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+#content_img {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#extra {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#footer {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}
