@@ -1,0 +1,97 @@
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url(gymfit.jpg);
+    background-size: 1520px 1000px;
+    font-family: 'Zen Dots', cursive;
+}
+.left{
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    display: inline-block;
+}
+
+.left div{
+    line-height: 20px;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+}
+
+.mid{
+    display: block;
+    width: 36%;
+    margin: 29px auto;
+}
+.right{
+    position: absolute;
+    right: 10px;
+    top: 43px;
+    display: inline-block;
+}
+
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 22px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: aqua;
+}
+
+.btn{
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+    margin: 0px 9px;
+    color: rgb(243, 16, 16);
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(33, 29, 29);
+}
+
+.container{
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 25%;
+    border-radius: 28px;
+}
+
+.form-group input{
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+    display: block;
+    width: 408px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.gender{
+    font-size: 23px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
